@@ -32,7 +32,7 @@ public class Main extends javax.swing.JFrame {
             @Override
             public void selected(int index, int subIndex, boolean menuItem) {
                 if (menuItem) {
-                    //  Your code here
+                    showForm(new Form(menu.getMenuNameAt(index, subIndex).trim()));
                 }
             }
         });
@@ -66,7 +66,7 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 1205, Short.MAX_VALUE)
+            .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 1335, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
